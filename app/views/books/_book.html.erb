@@ -1,0 +1,20 @@
+<div id="<%= dom_id book %>" class="card d-flex p-3 mb-3">
+  <div class="d-flex flex-column gap-2 w-100">
+    <p>
+      <strong>Title:</strong>
+      <%= book.title %>
+    </p>
+    <p>
+      <strong>Memo:</strong>
+      <%= book.memo %>
+    </p>
+    <p>
+      <strong>Author:</strong>
+      <%= book.author %>
+    </p>
+    <p>
+      <strong>Picture:</strong>
+      <%= image_tag(book.picture_url) if book.picture.present? %>
+    </p>
+  </div>
+</div>
